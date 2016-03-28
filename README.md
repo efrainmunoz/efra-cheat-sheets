@@ -63,3 +63,22 @@ Vagrant.configure("2") do |config|
 end
 ```
 Run a `vagrant reload` or `vagrant up` so that these changes can take effect.
+## Share
+### Login to Hashicorp's Atlas
+```
+$ vagrant login
+Username or Email: mitchellh
+Password (will be hidden):
+You are now logged in!
+```
+### Share it
+```
+$ vagrant share
+...
+==> default: Your Vagrant Share is running!
+==> default: URL: http://frosty-weasel-0857.vagrantshare.com
+...
+```
+### Teardown
+Use `vagrant suspend`, `vagrant halt`, or `vagrant destroy`.
+## Multi-Machine
