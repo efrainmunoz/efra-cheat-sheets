@@ -1,2 +1,2 @@
 # Efra's Cheat Sheets
-[Vagrant](efra-cheat-sheets/vagrant.md)
+[Vagrant](vagrant.md)
