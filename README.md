@@ -79,6 +79,6 @@ $ vagrant share
 ==> default: URL: http://frosty-weasel-0857.vagrantshare.com
 ...
 ```
-### Teardown
+## Teardown
 Use `vagrant suspend`, `vagrant halt`, or `vagrant destroy`.
 ## Multi-Machine
