@@ -82,3 +82,20 @@ $ vagrant share
 ## Teardown
 Use `vagrant suspend`, `vagrant halt`, or `vagrant destroy`.
 ## Multi-Machine
+#### Defining multiple machines
+Edit the Vagrantfile
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.provision "shell", inline: "echo Hello"
+
+  config.vm.define "web" do |web|
+    web.vm.box = "apache"
+  end
+
+  config.vm.define "db" do |db|
+    db.vm.box = "mysql"
+  end
+end
+```
+#### Controlling multiple machines
+Using the example above, you would say `vagrant ssh web` or `vagrant ssh db`.
