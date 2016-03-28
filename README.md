@@ -33,3 +33,22 @@ $ vagrant ssh
 vagrant@trusty64:~$ ls /vagrant
 Vagrantfile
 ```
+## Provisioning
+Create the following shell script and save it as `bootstrap.sh`
+```
+#!/usr/bin/env bash
+
+apt-get update
+apt-get install -y apache2
+if ! [ -L /var/www ]; then
+  rm -rf /var/www
+  ln -fs /vagrant /var/www
+fi
+```
+Edit the Vagrantfile
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.provision :shell, path: "bootstrap.sh"
+end
+```
