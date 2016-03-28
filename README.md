@@ -16,3 +16,20 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
 end
 ```
+## Up and SSH
+```
+$ vagrant up
+...
+$ vagrant ssh
+...
+vagrant@trusty64:~$
+```
+## Synced Folders
+```
+$ vagrant up
+...
+$ vagrant ssh
+...
+vagrant@trusty64:~$ ls /vagrant
+Vagrantfile
+```
