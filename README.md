@@ -6,11 +6,11 @@ $ cd vagrant_getting_started
 $ vagrant init
 ```
 ## Boxes
-### Installing a box
+#### Installing a box
 ```
 $ vagrant box add ubuntu/trusty64
 ```
-### Using a box
+#### Using a box
 ```ruby
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
@@ -53,7 +53,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 ## Networking
-### Port Forwarding
+#### Port Forwarding
 Edit the Vagrantfile
 ```ruby
 Vagrant.configure("2") do |config|
@@ -64,14 +64,14 @@ end
 ```
 Run a `vagrant reload` or `vagrant up` so that these changes can take effect.
 ## Share
-### Login to Hashicorp's Atlas
+#### Login to Hashicorp's Atlas
 ```
 $ vagrant login
 Username or Email: mitchellh
 Password (will be hidden):
 You are now logged in!
 ```
-### Share it
+#### Share it
 ```
 $ vagrant share
 ...
