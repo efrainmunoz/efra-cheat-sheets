@@ -1,3 +1,2 @@
 # Efra's Cheat Sheets
-http://github.com - automatic!
-[GitHub](http://github.com)
+[Vagrant](efra-cheat-sheets/vagrant.md)
