@@ -5,4 +5,5 @@
 * [Git](git.md)
 * [HTML](html.md)
 * [Javascript](javascript.md)
+* [Terminal](terminal.md)
 * [Vagrant](vagrant.md)
