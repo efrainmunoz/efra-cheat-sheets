@@ -52,3 +52,14 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: "bootstrap.sh"
 end
 ```
+## Networking
+### Port Forwarding
+Edit the Vagrantfile
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.network :forwarded_port, guest: 80, host: 4567
+end
+```
+Run a `vagrant reload` or `vagrant up` so that these changes can take effect.
