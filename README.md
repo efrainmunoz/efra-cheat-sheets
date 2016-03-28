@@ -1,3 +1,3 @@
 # Efra's Cheat Sheets
-#### Index
+#### Cheat Sheets List
 * [Vagrant](vagrant.md)
