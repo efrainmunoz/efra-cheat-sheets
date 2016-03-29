@@ -31,3 +31,16 @@ $ git init
 ```
 $ git clone https://github.com/efrainmunoz/efra-cheat-sheets
 ```
+## Recording Changes to the Repository
+#### Checking the Status
+```
+$ git status
+```
+#### Tracking New Files
+```
+$ git add <filename>
+```
+#### Staging Modified Files
+```
+$ git add <filename>
+````
