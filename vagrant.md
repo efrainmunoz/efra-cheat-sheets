@@ -1,5 +1,13 @@
 # Vagrant Cheat Sheet
 * [Project Setup](vagrant.md#project-setup)
+* [Boxes](vagrant.md#boxes)
+* [Up and SSH](vagrant.md#up-and-ssh)
+* [Synced Folders](vagrant.md#synced-folders)
+* [Provisioning](vagrant.md#provisioning)
+* [Networking](vagrant.md#networking)
+* [Share](vagrant.md#share)
+* [Teardown](vagrant.md#teardown)
+* [Multi-Machine](vagrant.md#multi-machine)
 
 ## Project Setup
 ```
