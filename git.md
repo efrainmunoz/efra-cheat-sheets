@@ -66,3 +66,15 @@ doc/*.txt
 # ignore all .pdf files in the doc/ directory
 doc/**/*.pdf
 ```
+#### Viewing Your Staged and Unstaged Changes
+```
+$ git status
+```
+To see not staged changes:
+```
+$ git diff
+```
+To see staged changes:
+```
+$d git diff --staged
+```
