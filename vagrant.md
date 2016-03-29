@@ -1,4 +1,6 @@
 # Vagrant Cheat Sheet
+* [Project Setup](vagrant.md#project-setup)
+
 ## Project Setup
 ```
 $ mkdir vagrant_getting_started
