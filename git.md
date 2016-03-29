@@ -82,3 +82,11 @@ $d git diff --staged
 ```
 $ git commit -m "Some description"
 ```
+#### Removing Files
+```
+$ git rm <filename>
+```
+#### Moving Files
+```
+$ git mv file_from file_to
+```
