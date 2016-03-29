@@ -194,10 +194,12 @@ Switched to a new branch 'branchname'
 ```
 ## Aliases
 ```
+$ git config --global alias.co 'commit -m'
 $ git config --global alias.unstage 'reset HEAD --'
 $ git config --global alias.last 'log -1 HEAD'
 ```
 ```
+$ git co "Commit description"
 $ git unstage fileA
 $ git last
 ...
