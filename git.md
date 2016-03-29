@@ -22,3 +22,12 @@ $ git config --list
 ```
 $ git help <command>
 ```
+## Getting a Git Repository
+#### Initializing a Repository in an Existing Directory
+```
+$ git init
+```
+#### Cloning an Existing Repository
+```
+$ git clone https://github.com/efrainmunoz/efra-cheat-sheets
+```
