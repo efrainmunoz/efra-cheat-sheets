@@ -8,6 +8,7 @@
 * [Undoing Things](git.md#undoing-things)
 * [Working with Remotes](git.md#working-with-remotes)
 * [Tagging](git.md#tagging)
+* [Aliases](git.md#aliases)
 
 ## Installing Git on Linux
 ```
@@ -190,4 +191,14 @@ $ git push origin --tags
 ```
 $ git checkout -b [branchname] [tagname]
 Switched to a new branch 'branchname'
+```
+## Aliases
+```
+$ git config --global alias.unstage 'reset HEAD --'
+$ git config --global alias.last 'log -1 HEAD'
+```
+```
+$ git unstage fileA
+$ git last
+...
 ```
