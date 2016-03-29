@@ -90,3 +90,22 @@ $ git rm <filename>
 ```
 $ git mv file_from file_to
 ```
+## Viewing the Commit History
+```
+$ git log
+```
+## Undoing Things
+The `--amend` option takes your staging area and uses it for the commit. If you’ve made no changes since your last commit, then your snapshot will look exactly the same, and all you’ll change is your commit message.
+```
+$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend
+```
+#### Unstaging a Staged File
+```
+$ git reset HEAD <filename>
+```
+#### Unmodifying a Modified File
+```
+$ git checkout -- <filename>
+```
