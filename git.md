@@ -1,5 +1,11 @@
 # Git Cheat Sheet
 * [Installing Git on Linux](git.md#installing-git-on-linux)
+* [First-Time Git Setup](git.md#first-time-git-setup)
+* [Getting Help](git.md#getting-help)
+* [Getting a Git Repository](git.md#getting-a-git-repository)
+* [Recording Changes to the Repository](git.md#recording-changes-to-the-repository)
+* [Viewing the Commit History](git.md#viewing-the-commit-history)
+* [Undoing Things](git.md#undoing-things)
 
 ## Installing Git on Linux
 ```
