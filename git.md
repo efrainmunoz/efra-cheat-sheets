@@ -78,3 +78,7 @@ To see staged changes:
 ```
 $d git diff --staged
 ```
+#### Commiting Your Changes
+```
+$ git commit -m "Some description"
+```
