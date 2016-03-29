@@ -232,7 +232,7 @@ Auto-merging <filename>
 CONFLICT (content): Merge conflict in <filename>
 Automatic merge failed; fix conflicts and then commit the result.
 ```
-Resolve the conflicts editing the file (or files) directly then add command to mark each file as resolved and commit.
+Resolve the conflicts, edit the file (or files) directly, then use the add command to mark each file as resolved and commit.
 ```
 $ git add <filename>
 $ git commit
