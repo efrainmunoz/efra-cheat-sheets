@@ -18,3 +18,7 @@ $ git config --global core.editor emacs
 $ git config --list
 ...
 ```
+## Getting Help
+```
+$ git help <command>
+```
