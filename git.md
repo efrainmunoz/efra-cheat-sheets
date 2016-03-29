@@ -1,5 +1,5 @@
 # Git Cheat Sheet
-* [Installing Git on Linux](angularjs2.md)
+* [Installing Git on Linux](git.md#installing-git-on-linux)
 
 ## Installing Git on Linux
 ```
