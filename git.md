@@ -6,6 +6,7 @@
 * [Recording Changes to the Repository](git.md#recording-changes-to-the-repository)
 * [Viewing the Commit History](git.md#viewing-the-commit-history)
 * [Undoing Things](git.md#undoing-things)
+* [Working with Remotes](git.md#working-with-remotes)
 
 ## Installing Git on Linux
 ```
@@ -116,4 +117,41 @@ $ git reset HEAD <filename>
 #### Unmodifying a Modified File
 ```
 $ git checkout -- <filename>
+```
+## Working with Remotes
+#### Showing Your Remotes
+```
+$ git remote -v
+```
+#### Adding Remote Repositories
+```
+$ git remote add <shortname> <url>
+```
+#### Fetching and Pulling from Your Remotes
+The `fetch` command only downloads the data to your local repository.
+```
+$ git fetch [remote-name]
+```
+The `pull` command automatically fetch and then merge that remote branch into your current branch.
+```
+$ git pull [remote-name]
+```
+The `clone` command automatically sets up your local master branch to track the remote master branch (or whatever the default branch is called) on the server you cloned from.
+```
+$ git clone [remote-url]
+```
+#### Pushing to Your Remotes
+```
+$ git push [remote-name] [branch-name]
+```
+#### Inspecting a Remote
+```
+$ git remote show [remote-name]
+```
+#### Removing and Renaming Remotes
+```
+$ git remote rename [old-name] [new-name]
+```
+```
+$ git remote rm [remote-name]
 ```
