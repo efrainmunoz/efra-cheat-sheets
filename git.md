@@ -7,6 +7,7 @@
 * [Viewing the Commit History](git.md#viewing-the-commit-history)
 * [Undoing Things](git.md#undoing-things)
 * [Working with Remotes](git.md#working-with-remotes)
+* [Tagging](git.md#tagging)
 
 ## Installing Git on Linux
 ```
@@ -154,4 +155,39 @@ $ git remote rename [old-name] [new-name]
 ```
 ```
 $ git remote rm [remote-name]
+```
+## Tagging
+#### Listing Your Tags
+```
+$ git tag
+```
+#### Creating Lightweight Tags
+```
+$ git tag <tag>
+```
+#### Creating Annotated Tags
+```
+$ git tag -a <tag> -m "my version 1.4"
+```
+#### Show Commit by Tag
+```
+$ git show <tag>
+```
+#### Tagging Later
+```
+$ git tag -a <tag> <commit-checksum>
+```
+#### Sharing Tags
+To share one tag
+```
+$ git push origin [tagname]
+```
+To share all tags
+```
+$ git push origin --tags
+```
+#### Checking out Tags
+```
+$ git checkout -b [branchname] [tagname]
+Switched to a new branch 'branchname'
 ```
