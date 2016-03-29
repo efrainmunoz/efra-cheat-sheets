@@ -9,6 +9,8 @@
 * [Working with Remotes](git.md#working-with-remotes)
 * [Tagging](git.md#tagging)
 * [Aliases](git.md#aliases)
+* [Branching](git.md#branching)
+* [Merging](git.md#merging)
 
 ## Installing Git on Linux
 ```
@@ -203,4 +205,35 @@ $ git co "Commit description"
 $ git unstage fileA
 $ git last
 ...
+```
+## Branching
+#### Creating a New Branch
+```
+$ git branch <branch-name>
+```
+#### Switching Branches
+```
+$ git checkout <branch-name>
+```
+#### List Branches
+```
+$ git branch -v
+```
+## Merging
+#### Basic Merging
+To merge some branch to the current branch
+```
+$ git merge <some-branch-name>
+```
+#### Basic Merge Conflicts
+```
+$ git merge <filename>
+Auto-merging <filename>
+CONFLICT (content): Merge conflict in <filename>
+Automatic merge failed; fix conflicts and then commit the result.
+```
+Resolve the conflicts editing the file (or files) directly then add command to mark each file as resolved and commit.
+```
+$ git add <filename>
+$ git commit
 ```
